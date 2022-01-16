@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,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"
+    />
+    <title>MealDeal</title>
+    <style>
+        #boxn {
+            height: 40px;
+            background: #2bb673;
+        }
+        
+        .boxntext {
+            text-align: center;
+            width: 130px;
+            padding: 9px;
+            font-size: 17px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #boxnclo {
+            color: rgb(247, 192, 55);
+        }
+        
+        .boxnLinks {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .boxntext:hover {
+            background: #1a8150;
+            cursor: pointer;
+        }
+        
+        #boxhtr {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .boxhtr1>img {
+            height: 75px;
+            margin-left: 30px;
+        }
+        
+        .boxhtr2>img {
+            margin-left: 150px;
+            height: 40px;
+        }
+        
+        .boxhtr3>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        
+        .boxhtr4>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 100px;
+        }
+        
+        .boxhtd5,
+        .boxhtd6 {
+            text-decoration: none;
+            font-size: 13px;
+            color: rgb(83, 83, 83);
+        }
+        
+        .boxhtd6 {
+            height: 23px;
+            border-left: 1px solid gray;
+        }
+        
+        #ntnh1 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #35619f;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        #ntnh1:hover {
+            cursor: pointer;
+        }
+        
+        #ntnh2 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #696969;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #ntnh2:hover {
+            cursor: pointer;
+        }
+        
+        .mainMeatDiv {
+            background-color: rgb(238, 236, 236);
+            width: 100%;
+            height: 250px;
+            padding: 15px;
+        }
+        
+        .meatFree {
+            width: 100%;
+            display: flex;
+        }
+        
+        .meatFree>h1 {
+            font-weight: 500;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        
+        .meatFree>.line {
+            width: 2px;
+            height: 28px;
+            background-color: black;
+            margin-left: 30px;
+            margin-right: 5px;
+            margin-top: 15px;
+        }
+        
+        .meatFree>h2 {
+            padding-left: 20px;
+            padding-top: 0px;
+            font-size: 24px;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: rgb(136, 136, 136);
+        }
+        
+        .mtwitter {
+            border-radius: 25px;
+            width: 65px;
+            height: 20px;
+            background-color: #1d9bf0;
+            text-align: center;
+            color: white;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            margin-left: 150px;
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+        
+        .mtwitter:hover {
+            background-color: #0b75bb;
+        }
+        
+        .mShareLike {
+            width: 75px;
+            height: 20px;
+            background-color: #1d9bf0;
+            text-align: center;
+            color: white;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 2px;
+        }
+        
+        .mShareLike:hover {
+            background-color: #0b75bb;
+        }
+        
+        .mainMeatDiv>.para1 {
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        
+        div>p {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        
+        span {
+            color: blue;
+            cursor: pointer;
+        }
+        
+        span:hover {
+            text-decoration: underline;
+        }
+        
+        .inputs {
+            margin-top: 50px;
+            display: flex;
+        }
+        
+        .dealName {
+            width: 200px;
+            height: 30px;
+            border-radius: 3px;
+            border: 0px;
+            margin-right: 30px;
+        }
+        
+        .selectItems {
+            width: 150px;
+            height: 33px;
+            border: 0px;
+            outline: none;
+            border-radius: 3px;
+        }
+        
+        .selectLocation {
+            width: 160px;
+            height: 33px;
+            border: 0px;
+            outline: none;
+            border-radius: 3px;
+            margin-left: 40px;
+        }
+        
+        .search {
+            width: 150px;
+            padding-top: 6px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            background-color: #f53838;
+            border-radius: 3px;
+            margin-left: 40px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .search:hover {
+            background-color: #b81212;
+        }
+        
+        .browse {
+            width: 200px;
+            padding-top: 6px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            background-color: #04be5a;
+            border-radius: 3px;
+            margin-left: 40px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .browse:hover {
+            background-color: #0a9c4e;
+        }
+        
+        #foodCourt {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 550px);
+            grid-template-rows: repeat(5, 580px);
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .foodImageDiv {
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        .foodImageDiv>img {
+            width: 100%;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        .headDiv {
+            width: 580px;
+            height: 50px;
+            display: flex;
+        }
+        
+        * {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-size: 23px;
+            color: gray;
+            font-weight: 400;
+            padding-left: 5px;
+        }
+        
+        h2 {
+            font-size: 19px;
+            padding: 4px;
+            color: rgb(161, 156, 156);
+            font-weight: 400;
+        }
+        
+        .infoDiv {
+            margin-left: 5px;
+            font-size: 16px;
+        }
+        
+        .btn {
+            width: 220px;
+            height: 35px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 21px;
+            font-weight: bold;
+            border-radius: 7px;
+            background-color: #d70c0c;
+            margin-top: 23px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #b60909;
+        }
+        
+        .second {
+            border-top: 1px solid rgb(204, 197, 197);
+            margin-top: 10px;
+            display: flex;
+        }
+        
+        .logoDiv {
+            border-right: 1px solid lightgray;
+            width: 200px;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        
+        .KindDisc {
+            color: black;
+            font-size: 16px;
+        }
+        
+        .third {
+            width: 250px;
+            border-right: 1px solid lightgray;
+        }
+        
+        .KindDisc,
+        .exp {
+            text-align: center;
+            font-weight: 600;
+            padding-top: 6px;
+        }
+        
+        .percent,
+        .day {
+            font-size: 28px;
+            text-align: center;
+            padding-top: 5px;
+            color: red;
+        }
+        
+        .fourth {
+            width: 150px;
+            text-align: center;
+        }
+        
+        #bodybox8 {
+            height: 390px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        #bodybox82 {
+            height: 100%;
+            background-color: #2bb673;
+        }
+        
+        #bodybox821 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        #bodybox82>div>div>p {
+            line-height: 5px;
+            font-size: 13px;
+        }
+        
+        #bodybox82>div>div>h3 {
+            font-size: 15px;
+        }
+        
+        #bodybox822 {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: 13px;
+            line-height: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="boxh">
+        <table>
+            <tr id="boxhtr">
+                <td id="boxhtr1"><img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="boxhtr2">
+                                <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+                            </td>
+                            <td class="boxhtr3">
+                                <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+                            </td>
+                            <td class="boxhtr4">
+                                <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><a class="boxhtd5" href="logIn.html"> Log in</a></td>
+                            <td><a href="facebook.html"><button id="ntnh1">Facebook</button></a></td>
+                            <td><a href="https://myaccount.google.com/"><button id="ntnh2">Email</button></a></td>
+                            <td><a class="boxhtd6" href="createAc.html">Sign Up</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="boxn">
+        <table>
+            <tr>
+                <td class="boxntext"><a class="boxnLinks" href="homepage.html">Home</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="MealDeals.html">Meal Deals</a></td>
+                <td class="boxntext">
+                    KindMoments
+                </td>
+                <td class="boxntext">
+                    Hot Picks
+                </td>
+                <td class="boxntext"><a class="boxnLinks" href="Recipes.html">Recipes</a>
+
+                </td>
+                <td class="boxntext">
+                    Directory
+                </td>
+                <td class="boxntext"><a class="boxnLinks" href="artical.html">Articles</a></td>
+                <td id="boxnclo" class="boxntext"><a class="boxnLinks" href="DigiReward.html">Digi Rewards</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="help.html">Help </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mainMeatDiv">
+        <div class="meatFree">
+
+            <h1>Meat-Free Deals</h1>
+            <div class="line"></div>
+            <h2>Restaurants In Malaysia</h2>
+            <div class="mtwitter">twitter</div>
+            <div class="mShareLike">Share</div>
+            <div class="mShareLike">Like 3</div>
+
+        </div>
+        <div class="para1">Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants. No upfront payment, booking or printing is needed. If you share it on social
+            media, you'll even DOUBLE your discount!</div>
+        <p>Download our <span>mobile app</span> now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now!</p>
+        <div class="inputs">
+            <input type="text" placeholder="Search Shop or Deal Name" class="dealName" />
+            <select name="items" id="Categories" class="selectItems">
+                <option value="">All Categories</option>
+                <option value="pasta">Pasta</option>
+                <option value="burger">Burger</option>
+                <option value="breakFast">Break Fast</option>
+                <option value="salad">Salad</option>
+                <option value="bakery">Bakery</option>
+                <option value="tea">Tea & Deserts</option>
+                <option value="localDelights">Local Delights</option>
+                <option value="jap">Jap $ Korean</option>
+                <option value="chinese">Chinese</option>
+                <option value="japan">Japan</option>
+                <option value="india">India</option>
+                <option value="soup">Soup</option>
+                <option value="cute">Cute</option>
+            </select>
+
+            <select name="" class="selectLocation">
+                <option value="kalag">Kalag Vally</option>
+                <option value="kuala"> Kuala Lumpur  </option>
+                <option value="petaling">Petaling Jaya</option>
+                <option value="ampang">Ampang</option>
+                <option value="ara">Ara Damansara</option>
+                <option value="bangsar">Bangsar</option>
+                <option value="south">Bangsar South</option>
+                <option value="bukit">Bukit bintang</option>
+                <option value="cheras">Cheras</option>
+                <option value="ipoh">Ipoh</option>
+                <option value="kepong">Kepong</option>
+            </select>
+            <div class="search">Search Deals</div>
+            <div class="browse">Browse Restaurants</div>
+        </div>
+
+    </div>
+    <div id="foodCourt"></div>
+    <div id="bodybox8">
+        <div id="bodybox82">
+            <div id="bodybox821">
+                <div>
+                    <h3>General</h3>
+                    <p>Home</p>
+                    <p>Signup</p>
+                    <p>Businesses/Restauraters</p>
+                    <p>Advertising</p>
+                    <p>About Kindmeal.my</p>
+                    <p>Help & FAQ</p>
+                    <p>Terms & Conditions</p>
+                    <p>Inspiring Partners</p>
+                    <p>LifeStyle Ambassadors</p>
+                    <p>Jobs & Careers</p>
+                    <p>Contact us</p>
+                </div>
+                <div>
+                    <h3>Features</h3>
+                    <p>Meat-free deals</p>
+                    <p>Tasty Menus</p>
+                    <p>Kind Moments</p>
+                    <p>Meat-free Recipes</p>
+                    <p>Member Recommendations</p>
+                    <p>Featured Restaurants</p>
+                    <p>Vegetarian & Vegan Directory</p>
+                    <p>Food Map</p>
+                    <p>Become A Superhero</p>
+                    <p>Vegan News & Vegan Articles</p>
+                    <p>latest comments</p>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <p>KindMeal Widget</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+
+                </div>
+                <div>
+                    <h3>Mobile</h3>
+                    <p>iPhone & iPod App</p>
+                    <p>Android App</p>
+                    <h3>Exciting Promos</h3>
+                    <p>Gadhimai: Ending Mass Slaughter</p>
+                    <p>Free Meals</p>
+                    <p>Food Bloggers</p>
+                    <p>Uber CHIRP</p>
+                    <p>Jane Goodall Contest</p>
+                    <p>Win Digi iPhone 6</p>
+                    <p>Feed The Poor</p>
+                    <p>win Superhero Gifts</p>
+                    <p>Win an iPad Mini 3</p>
+                </div>
+                <div>
+                    <h3>PetFinder.my</h3>
+                    <p>Adopt A Pet</p>
+                    <p>Smartphone Apps</p>
+                    <p>WAgazine</p>
+                    <p>Discussion Forum</p>
+                    <p>Medical Fund</p>
+
+                </div>
+            </div>
+            <div id="bodybox822">
+                <p>Copyright © KindMeal.my, 2014 - 2021. All rights reserved.</p>
+                <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var mealData = [{
+        mealImage: "https://www.kindmeal.my/photos/deal/6/696-4578-l.jpg",
+        head1: "Alice Kitchen by Yishensu -",
+        head2: "Petaling Jaya, Selangor",
+        info: "Alice Kitchen delights you with fusion vegetarian and vegan gourmet cuisine, with an innovative gastronomic take on traditional an..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "15% Off",
+        exp: "Expires In",
+        days: '6 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/5/529-2478-l.jpg",
+        head1: "Croutons Cafe -",
+        head2: "Seri Kembangan, Selangor",
+        info: "Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '12 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/6/614-3355-l.jpg",
+        head1: "Elyn Vegetarian  -",
+        head2: "Puchong, Selangor",
+        info: "As our restaurant's name implies, we bring you memorable vegetarian cuisines that are both a beauty of taste and visual appeal. E..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '6 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/7/705-4771-l.jpg",
+        head1: "Hijau -",
+        head2: "Kuala Lumpur, Wilayah Persekutuan",
+        info: "Indulge in Japanese-Asian fusion plant-based comfort food and healthy pleasure! Hijau is your go-to, where you can embrace delicio..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "15% Off",
+        exp: "Expires In",
+        days: '5 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/3/301-722-l.jpg",
+        head1: "MBG Fruit Shop -",
+        head2: "Petaling Jaya & 5 Branches",
+        info: "Enjoy discount from any of our signature fruit juices below: No 1 (Avocado + Date Sweetener + Yogurt + Milk) – RM12.70 No 8 (Gi..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '1 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/6/676-4265-l.jpg",
+        head1: "Friendster Hub -",
+        head2: "Kuala Lumpur, Wilayah Persekutuan",
+        info: "Indulge in our Modern Asian Fusion meals, prepared with fresh, quality ingredients. We promise to delight your taste, smell and s..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '5 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/6/677-4286-l.jpg",
+        head1: "SUPE Vegan -",
+        head2: "Kuala Lumpur, Wilayah Persekutuan",
+        info: "Indulge in our Modern Asian Fusion meals, prepared with fresh, quality ingredients. We promise to delight your taste, smell and s..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "12% Off",
+        exp: "Expires In",
+        days: '12 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/7/707-4819-l.jpg",
+        head1: "Simple Garden Cafe -",
+        head2: " Sri Petaling, Kuala Lumpur",
+        info: "We strive to delight you with simple yet tasty and nutritious meals that you would simply love! Feast on any items from our meatl..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "10% Off",
+        exp: "Expires In",
+        days: '6 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/3/383-1189-l.jpg",
+        head1: "Dining Bowl -",
+        head2: "Kuala Lumpur, Wilayah Persekutuan",
+        info: "Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality ingredients, in an envir..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '9 Days'
+
+    }, {
+        mealImage: "https://www.kindmeal.my/photos/deal/4/467-2796-l.jpg",
+        head1: "PCLO Cafe -",
+        head2: "Kuala Lumpur, Wilayah Persekutuan",
+        info: "Think of Churros, think of PCLO Cafe! Each batch of eggless Churros is made with passion and from scratch in our kitchen. Which ..",
+        btnName: "Get FREE Coupon",
+        logo1: "https://www.kindmeal.my/images/icon_egg.png",
+        logo2: "https://www.kindmeal.my/images/icon_milk.png",
+        logo3: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+        Kindis: "KindMeal Discount",
+        dis: "20% Off",
+        exp: "Expires In",
+        days: '4 Days'
+    }];
+
+    mealData.map(function(food) {
+        var mainImageDiv = document.createElement("div");
+        mainImageDiv.className = "foodImageDiv";
+
+        var image = document.createElement("img");
+        image.src = food.mealImage;
+
+        var first = document.createElement("div");
+        first.className = "headDiv"
+
+        var head1 = document.createElement("h1");
+        head1.textContent = food.head1;
+
+        var head2 = document.createElement("h2");
+        head2.textContent = food.head2;
+
+        var infoDiv = document.createElement("div");
+        infoDiv.className = "infoDiv";
+        infoDiv.textContent = food.info;
+
+        var buttonDiv = document.createElement("div");
+        buttonDiv.className = "btn";
+        buttonDiv.textContent = food.btnName;
+
+        var secDiv = document.createElement("div");
+        secDiv.className = "second";
+
+        var logoDivs = document.createElement("div");
+        logoDivs.className = "logoDiv"
+
+
+        var logoOne = document.createElement("img");
+        logoOne.className = "logo"
+        logoOne.src = food.logo1;
+
+        var logoTwo = document.createElement("img");
+        logoTwo.className = "logo"
+        logoTwo.src = food.logo2;
+
+        var logoThree = document.createElement("img");
+        logoThree.className = "logo"
+        logoThree.src = food.logo3;
+
+        var disDiv = document.createElement("div")
+        disDiv.className = "third"
+
+        var kindmealDis = document.createElement("div");
+        kindmealDis.className = "KindDisc";
+        kindmealDis.textContent = food.Kindis;
+
+        var disc = document.createElement("div")
+        disc.className = "percent";
+        disc.textContent = food.dis;
+
+        var daysDiv = document.createElement('div')
+        daysDiv.className = "fourth"
+
+        var expire = document.createElement("div");
+        expire.className = "exp"
+        expire.textContent = food.exp;
+
+        var day = document.createElement("div");
+        day.className = "day"
+        day.textContent = food.days;
+
+        var foodco = document.querySelector("#foodCourt");
+        foodco.append(mainImageDiv);
+        first.append(head1, head2)
+        logoDivs.append(logoOne, logoTwo, logoThree)
+        disDiv.append(kindmealDis, disc)
+        daysDiv.append(expire, day)
+        secDiv.append(logoDivs, disDiv, daysDiv)
+        mainImageDiv.append(image, first, infoDiv, buttonDiv, secDiv)
+    })
+</script>

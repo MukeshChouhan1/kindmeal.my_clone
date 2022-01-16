@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxn {
+            height: 40px;
+            background: #2bb673;
+        }
+        
+        .boxntext {
+            text-align: center;
+            width: 100px;
+            padding: 9px;
+            font-size: 17px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #boxnclo {
+            color: rgb(238, 178, 28);
+        }
+        
+        .boxnLinks {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .boxntext:hover {
+            background: #1a8150;
+            cursor: pointer;
+        }
+        
+        #boxhtr {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .boxhtd1>img {
+            height: 75px;
+            margin-left: 30px;
+        }
+        
+        .boxhtd2>img {
+            margin-left: 150px;
+            height: 40px;
+        }
+        
+        .boxhtd3>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        
+        .boxhtd4>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 100px;
+        }
+        
+        .boxhtd5,
+        .boxhtd6 {
+            text-decoration: none;
+            font-size: 13px;
+            color: rgb(83, 83, 83);
+        }
+        
+        .boxhtd6 {
+            height: 23px;
+            border-left: 1px solid gray;
+        }
+        
+        #ntnh1 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #35619f;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        #ntnh1:hover {
+            cursor: pointer;
+        }
+        
+        #ntnh2 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #696969;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #ntnh2:hover {
+            cursor: pointer;
+        }
+        
+        #boxhtr {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .boxhtd1>img {
+            height: 75px;
+            margin-left: 30px;
+        }
+        
+        .boxhtd2>img {
+            margin-left: 150px;
+            height: 40px;
+        }
+        
+        .boxhtd3>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        
+        .boxhtd4>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 100px;
+        }
+        
+        .boxhtd5,
+        .boxhtd6 {
+            text-decoration: none;
+            font-size: 13px;
+            color: rgb(83, 83, 83);
+        }
+        
+        .boxhtd6 {
+            height: 23px;
+            border-left: 1px solid gray;
+        }
+        
+        #ntnh1 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #35619f;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        #ntnh1:hover {
+            cursor: pointer;
+        }
+        
+        #ntnh2 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #696969;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #ntnh2:hover {
+            cursor: pointer;
+        }
+        
+        #bodybox8 {
+            height: 390px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        
+        #bodybox82 {
+            height: 100%;
+            background-color: #2bb673;
+        }
+        
+        #bodybox821 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        #bodybox82>div>div>p {
+            line-height: 5px;
+            font-size: 13px;
+        }
+        
+        #bodybox82>div>div>h3 {
+            font-size: 15px;
+        }
+        
+        #bodybox822 {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: 13px;
+            line-height: 6px;
+        }
+        
+        #pbox1 {
+            height: 300px;
+            background-image: url("https://www.kindmeal.my/photos/member/0/6-c.jpg");
+            margin-bottom: 50px;
+        }
+        
+        #pbox22 {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 90%;
+            height: 400px;
+            margin: auto;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        #pbox21 {
+            width: 90%;
+            margin: auto;
+        }
+        
+        #but222 {
+            background-color: blue;
+            border: 0;
+            border-radius: 5px;
+            color: cornsilk;
+            width: 100px;
+            height: 30px;
+        }
+        
+        #inputc {
+            width: 400px;
+            height: 50px;
+            background-color: rgb(240, 240, 243);
+            border-radius: 7px;
+            border: 0;
+        }
+        
+        #ingre {
+            width: 90%;
+            height: 400px;
+            margin: auto;
+        }
+        
+        #img4 {
+            display: flex;
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        
+        #img41 {
+            width: 24%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        #recipe {
+            text-align: center;
+        }
+        
+        #rate2 {
+            width: 90%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        
+        #but2 {
+            border: 0;
+            border-radius: 7px;
+            width: 130px;
+            height: 30px;
+            background-color: blueviolet;
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="boxh">
+        <table>
+            <tr id="boxhtr">
+                <td class="boxhtd1"><img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="boxhtd2">
+                                <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+                            </td>
+                            <td class="boxhtd3">
+                                <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+                            </td>
+                            <td class="boxhtd4">
+                                <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><a class="boxhtd5" href="logIn.html"> Log in</a></td>
+                            <td><a href="facebook.html"><button id="ntnh1">Facebook</button></a></td>
+                            <td><a href="https://myaccount.google.com/"><button id="ntnh2">Email</button></a></td>
+                            <td><a class="boxhtd6" href="createAc.html">Sign Up</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="boxn">
+        <table>
+            <tr>
+                <td class="boxntext"><a class="boxnLinks" href="homepage.html">Home</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="MealDeals.html">Meal Deals</a></td>
+                <td class="boxntext">
+                    KindMoments
+                </td>
+                <td class="boxntext">
+                    Hot Picks
+                </td>
+                <td class="boxntext"><a class="boxnLinks" href="Recipes.html">Recipes</a>
+                </td>
+                <td class="boxntext">
+                    Directory
+                </td>
+                <td class="boxntext"><a class="boxnLinks" href="artical.html">Articles</a></td>
+                <td id="boxnclo" class="boxntext"><a class="boxnLinks" href="DigiReward.html">Digi Rewards</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="help.html">Help </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="pbox1">
+
+    </div>
+    <div id="pbox2">
+        <div id="pbox21">
+            <h1>German-Style Potato Pancakes</h1>
+        </div>
+        <div id="pbox22">
+            <div id="pbox221">
+                <img src="https://www.kindmeal.my/photos/recipe/124/124815-19395-l.jpg" alt="" width="75%" height="100%">
+            </div>
+            <div id="pbox222">
+                <div>
+                    <h3>Comment</h3>
+                    <input id="inputc" type="text" placeholder="Comment here">
+                </div>
+
+                <div>
+                    <h3>Rating</h3>
+                    <img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png"
+                        alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt="">
+                    <p>0 Votes</p>
+                </div>
+
+                <div>
+                    <button id="but222">Like 0</button>
+                    <p> Like this recipe & share with friends!</p>
+                    <img src="https://www.kindmeal.my/images/share_facebook.png" alt="">&nbsp;&nbsp;<img src="https://www.kindmeal.my/images/share_twitter.png" alt="">&nbsp;&nbsp;<img src="https://www.kindmeal.my/images/share_google.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="ingre">
+            <div>
+                <h2>Secret Ingredients</h2>
+                <ul>
+                    <li>3 lbs potatoes, peeled</li>
+                    <li>1 large onion, quartered</li>
+                    <li>3 eggs, beaten</li>
+                    <li>1/2 cup all-purpose flour</li>
+                    <li>1 teaspoon baking powder</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 tablespoon parsley</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Directions</h2>
+                <ol>
+                    <li>Keep potatoes covered with cold water until ready to grate in the food processor.</li>
+                    <li>Fit the medium shredding blade into food processor and shred potatoes and onion.</li>
+                    <li>Dry potatoes and onion between sheets of paper towel.</li>
+                    <li>In a large bowl combine potato mixture with eggs, flour, baking powder, parsley and salt. In a large skillet heat 1/8 inch vegetable oil until hot. Pour in 1/3 cup potato mixture, flattening with the back of a wooden spoon, and fry
+                        until crisp and golden brown on both sides, about 3 minutes per s ide. Drain on paper towel and keep warm in a 100 degree oven.</li>
+                    <li>1 teaspoon baking powder</li>
+                    <li>Serve with applesauce. - - - - - - - - - - - - - - - - - -</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <h2 id="recipe"> More Photos Of This Recipe</h2>
+            <div id="img4">
+                <img id="img41" src="https://www.kindmeal.my/photos/recipe/124/124815-19396-s.jpg" alt="">
+                <img id="img41" src="https://www.kindmeal.my/photos/recipe/124/124815-19397-s.jpg" alt="">
+                <img id="img41" src="https://www.kindmeal.my/photos/recipe/124/124815-19398-s.jpg" alt="">
+                <img id="img41" src="https://www.kindmeal.my/photos/recipe/124/124815-19399-s.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="rate2">
+        <div>
+            <h2>Rate This Recipe</h2>
+            <p>What do you think of this recipe?</p>
+            <img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png"
+                alt=""><img src="https://www.kindmeal.my/images/icon_star_grey.png" alt="">
+            <p>No Rating</p>
+            <button id="but2">Submit Rating</button>
+        </div>
+        <div>
+            <h2>Comments</h2>
+            <div>
+                <p>Be the first to comment on this delicious recipe </p>
+                <p>No Comments</p>
+                <input id="inputc" type="text" placeholder="Comment here"><br><br>
+                <button id="but2">Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bodybox8">
+
+        <div id="bodybox82">
+            <div id="bodybox821">
+                <div>
+                    <h3>General</h3>
+                    <p>Home</p>
+                    <p>Signup</p>
+                    <p>Businesses/Restauraters</p>
+                    <p>Advertising</p>
+                    <p>About Kindmeal.my</p>
+                    <p>Help & FAQ</p>
+                    <p>Terms & Conditions</p>
+                    <p>Inspiring Partners</p>
+                    <p>LifeStyle Ambassadors</p>
+                    <p>Jobs & Careers</p>
+                    <p>Contact us</p>
+                </div>
+                <div>
+                    <h3>Features</h3>
+                    <p>Meat-free deals</p>
+                    <p>Tasty Menus</p>
+                    <p>Kind Moments</p>
+                    <p>Meat-free Recipes</p>
+                    <p>Member Recommendations</p>
+                    <p>Featured Restaurants</p>
+                    <p>Vegetarian & Vegan Directory</p>
+                    <p>Food Map</p>
+                    <p>Become A Superhero</p>
+                    <p>Vegan News & Vegan Articles</p>
+                    <p>latest comments</p>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <p>KindMeal Widget</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+
+                </div>
+                <div>
+                    <h3>Mobile</h3>
+                    <p>iPhone & iPod App</p>
+                    <p>Android App</p>
+                    <h3>Exciting Promos</h3>
+                    <p>Gadhimai: Ending Mass Slaughter</p>
+                    <p>Free Meals</p>
+                    <p>Food Bloggers</p>
+                    <p>Uber CHIRP</p>
+                    <p>Jane Goodall Contest</p>
+                    <p>Win Digi iPhone 6</p>
+                    <p>Feed The Poor</p>
+                    <p>win Superhero Gifts</p>
+                    <p>Win an iPad Mini 3</p>
+                </div>
+                <div>
+                    <h3>PetFinder.my</h3>
+                    <p>Adopt A Pet</p>
+                    <p>Smartphone Apps</p>
+                    <p>WAgazine</p>
+                    <p>Discussion Forum</p>
+                    <p>Medical Fund</p>
+
+                </div>
+            </div>
+            <div id="bodybox822">
+                <p>Copyright © KindMeal.my, 2014 - 2021. All rights reserved.</p>
+                <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

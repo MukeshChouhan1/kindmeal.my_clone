@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #signUpContainer {
+            width: 100%;
+            display: flex;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+        
+        .leftCont {
+            width: 280px;
+            margin-left: 10px;
+            margin-top: 35px;
+        }
+        
+        .foodLover {
+            width: 100%;
+            height: 250px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .foodLover>img {
+            margin: 40px 0px 0px 60px;
+            width: 160px;
+        }
+        
+        .foodLover>p {
+            position: absolute;
+            font-size: 16px;
+            padding-left: 70px;
+        }
+        
+        .whyKindMeal {
+            width: 100%;
+            height: 300px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        
+        .whyKindMeal>h2 {
+            padding-left: 40px;
+        }
+        
+        .whyKindMeal>ul {
+            margin-right: 5px;
+            line-height: 20px;
+        }
+        
+        .whyKindMeal>span {
+            cursor: pointer;
+            padding: 55px;
+        }
+        
+        .whyKindMeal>span:hover {
+            text-decoration: underline;
+        }
+        
+        .rightCont {
+            width: 70%;
+            margin-left: 60px;
+        }
+        
+        .rightCont>h1 {
+            font-size: 30px;
+            padding-block: 5px;
+        }
+        
+        h1>span {
+            color: blue;
+            cursor: pointer;
+        }
+        
+        span:hover {
+            text-decoration: underline;
+        }
+        
+        .rightCont>div {
+            width: 780px;
+            margin-top: 30px;
+        }
+        
+        .tableDiv {
+            width: 50px;
+        }
+        
+        .first {
+            margin-left: 60px;
+            height: 30px;
+            font-size: 18px;
+        }
+        
+        .last {
+            height: 30px;
+            font-size: 18px;
+        }
+        
+        .input {
+            margin-left: 60px;
+            height: 35px;
+            width: 500px;
+            font-size: 12px;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        
+        .dob {
+            margin-left: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        
+        .day {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        
+        .year {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        
+        .location {
+            height: 30px;
+            width: 200px;
+            margin-left: 60px;
+            font-size: 17px;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        
+        .gender {
+            margin-left: 55px;
+            font-size: 18px;
+        }
+        
+        button {
+            margin-left: 60px;
+            height: 25px;
+        }
+        
+        table {
+            font-size: 19px;
+        }
+        
+        td {
+            padding-top: 30px;
+        }
+        
+        .joinbtn {
+            width: 160px;
+            height: 40px;
+            margin-top: 40px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: #e91616;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .joinbtn:hover {
+            background-color: #b60a0a;
+        }
+        
+        .check {
+            display: flex;
+            margin-left: 80px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .check>span {
+            color: black;
+        }
+        
+        #bodybox8 {
+            height: 390px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        #bodybox82 {
+            height: 100%;
+            background-color: #2bb673;
+        }
+        
+        #bodybox821 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        #bodybox82>div>div>p {
+            line-height: 5px;
+            font-size: 13px;
+        }
+        
+        #bodybox82>div>div>h3 {
+            font-size: 15px;
+        }
+        
+        #bodybox822 {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: 13px;
+            line-height: 6px;
+        }
+        
+        #boxn {
+            height: 40px;
+            background: #2bb673;
+        }
+        
+        .boxntext {
+            text-align: center;
+            width: 130px;
+            padding: 9px;
+            font-size: 17px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #boxnclo {
+            color: rgb(247, 192, 55);
+        }
+        
+        .boxnLinks {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .boxntext:hover {
+            background: #1a8150;
+            cursor: pointer;
+        }
+        
+        #boxhtr {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .boxhtr1>img {
+            height: 75px;
+            margin-left: 30px;
+        }
+        
+        .boxhtr2>img {
+            margin-left: 150px;
+            height: 40px;
+        }
+        
+        .boxhtr3>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        
+        .boxhtr4>img {
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 100px;
+        }
+        
+        .boxhtd5,
+        .boxhtd6 {
+            text-decoration: none;
+            font-size: 13px;
+            color: rgb(83, 83, 83);
+        }
+        
+        .boxhtd6 {
+            height: 23px;
+            border-left: 1px solid gray;
+        }
+        
+        #ntnh1 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #35619f;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        #ntnh1:hover {
+            cursor: pointer;
+        }
+        
+        #ntnh2 {
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #696969;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #ntnh2:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="boxh">
+        <table>
+            <tr id="boxhtr">
+                <td id="boxhtr1"><img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="boxhtr2">
+                                <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+                            </td>
+                            <td class="boxhtr3">
+                                <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+                            </td>
+                            <td class="boxhtr4">
+                                <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><a class="boxhtd5" href="logIn.html"> Log in</a></td>
+                            <td><a href="facebook.html"><button id="ntnh1">Facebook</button></a></td>
+                            <td><a href="https://myaccount.google.com/"><button id="ntnh2">Email</button></a></td>
+                            <td><a class="boxhtd6" href="createAc.html">Sign Up</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="boxn">
+        <table>
+            <tr>
+                <td class="boxntext"><a class="boxnLinks" href="homepage.html">Home</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="MealDeals.html">Meal Deals</a></td>
+                <td class="boxntext">
+                    KindMoments
+                </td>
+                <td class="boxntext">
+                    Hot Picks
+                </td>
+                <td class="boxntext"><a class="boxnLinks" href="Recipes.html">Recipes</a>
+                </td>
+                <td class="boxntext">
+                    Directory
+                </td>
+                <td class="boxntext">
+                    <a class="boxnLinks" href="articles.html">Articles</a>
+                </td>
+                <td id="boxnclo" class="boxntext"><a class="boxnLinks" href="DigiReward.html">Digi Rewards</a></td>
+                <td class="boxntext"><a class="boxnLinks" href="help.html">Help </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="signUpContainer">
+        <div class="leftCont">
+            <div class="foodLover">
+                <img src="https://www.kindmeal.my/images/join_normal.png" />
+                <p>Food Lover Sign Up</p>
+            </div>
+            <div class="foodLover">
+                <img src="https://www.kindmeal.my/images/join_shop.png" />
+                <p>Restaurant Sign Up</p>
+
+            </div>
+            <div class="whyKindMeal">
+                <h2>Why KindMeal</h2>
+                <ul>
+                    <li>Exclusive meat-free deals</li>
+                    <li>Share yummt food moments</li>
+                    <li>Meet friendly food lovers</li>
+                    <li>Discover cool restaurants</li>
+                    <li>Email updates on tasty deals</li>
+                    <li>Instant coupons & dining</li>
+                    <li>No upfront payment, booking or printing</li>
+                </ul>
+                <span>More about KindMeal »</span>
+            </div>
+        </div>
+        <br>
+        <div class="rightCont">
+            <h1>Food Lover? Sign Up Now or <span>Login With Facebook</span></h1>
+            <p>Discover tasty meat-free meals and dine instantly — no coupon payment, booking or printing is required.</p>
+            <div>KindMeal is a fun, exciting and cool new way for you to show your compassion towards animals. We collaborate with kind restaurants and cafes across the nation to bring you delicious meat-free foods that will not only help save precious animal
+                lives, but improve your health and save your money at the same time!</div>
+            <div class="tableDiv">
+                <table>
+                    <tr>
+                        <td>Your Name</td>
+                        <td>
+                            <input type="text" placeholder="First Name" class="first">
+                            <input type="text" placeholder="Last Name" class="last">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="mail" placeholder="Your email must be correct to receive activation email" class="input"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Re-Enter Email</td>
+                        <td><input type="mail" class="input"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" class="input"></td>
+                    </tr>
+
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" placeholder="Choose a cool username for your Personal Profile page, comments & reviews" class="input"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Birth Date</td>
+                        <td>
+                            <select name="months" class="dob">
+                            <option value="">Month</option>
+                            <option value="jan">Jan</option>
+                            <option value="feb">Feb</option>
+                            <option value="march">Mar</option>
+                            <option value="april">Apr</option>
+                            <option value="may">May</option>
+                            <option value="june">Jun</option>
+                            <option value="july">Jul</option>
+                            <option value="august">Aug</option>
+                            <option value="september">Sep</option>
+                            <option value="october">Oct</option>
+                            <option value="november">Nov</option>
+                            <option value="december">Dec</option>
+                            </select>
+                            <select class="day">
+                                <option value="">Day</option>
+                            </select>
+                            <select class="year">
+                                <option value="">Year</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td><select class="location">
+                            <option value="">Malaysia</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><select class="location">
+                            <option value="">Select State</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <div class="gender">
+                                <div><input type="radio"><label>Male</label></div<div><input type="radio"><label>Female</label></div>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Profile Photo:</td>
+                        <td><button>Select Photo</button></td>
+                    </tr>
+                </table>
+                <div class="check">
+                    <div><input type="checkbox" class="checkbox"></div>
+                    <div> I agree to KindMeal.my's <span>Terms & Conditions</span></div>
+                </div>
+
+
+            </div>
+
+            <button class="joinbtn">Join Now</button>
+        </div>
+
+
+
+
+    </div>
+    <div id="bodybox8">
+        <div id="bodybox82">
+            <div id="bodybox821">
+                <div>
+                    <h3>General</h3>
+                    <p>Home</p>
+                    <p>Signup</p>
+                    <p>Businesses/Restauraters</p>
+                    <p>Advertising</p>
+                    <p>About Kindmeal.my</p>
+                    <p>Help & FAQ</p>
+                    <p>Terms & Conditions</p>
+                    <p>Inspiring Partners</p>
+                    <p>LifeStyle Ambassadors</p>
+                    <p>Jobs & Careers</p>
+                    <p>Contact us</p>
+                </div>
+                <div>
+                    <h3>Features</h3>
+                    <p>Meat-free deals</p>
+                    <p>Tasty Menus</p>
+                    <p>Kind Moments</p>
+                    <p>Meat-free Recipes</p>
+                    <p>Member Recommendations</p>
+                    <p>Featured Restaurants</p>
+                    <p>Vegetarian & Vegan Directory</p>
+                    <p>Food Map</p>
+                    <p>Become A Superhero</p>
+                    <p>Vegan News & Vegan Articles</p>
+                    <p>latest comments</p>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <p>KindMeal Widget</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+
+                </div>
+                <div>
+                    <h3>Mobile</h3>
+                    <p>iPhone & iPod App</p>
+                    <p>Android App</p>
+                    <h3>Exciting Promos</h3>
+                    <p>Gadhimai: Ending Mass Slaughter</p>
+                    <p>Free Meals</p>
+                    <p>Food Bloggers</p>
+                    <p>Uber CHIRP</p>
+                    <p>Jane Goodall Contest</p>
+                    <p>Win Digi iPhone 6</p>
+                    <p>Feed The Poor</p>
+                    <p>win Superhero Gifts</p>
+                    <p>Win an iPad Mini 3</p>
+                </div>
+                <div>
+                    <h3>PetFinder.my</h3>
+                    <p>Adopt A Pet</p>
+                    <p>Smartphone Apps</p>
+                    <p>WAgazine</p>
+                    <p>Discussion Forum</p>
+                    <p>Medical Fund</p>
+
+                </div>
+            </div>
+            <div id="bodybox822">
+                <p>Copyright © KindMeal.my, 2014 - 2021. All rights reserved.</p>
+                <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
